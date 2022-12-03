@@ -8,12 +8,13 @@ public class Program {
         List<String> productsList = new ArrayList<>();
 
         productsList.add("Phone");
-        productsList.add("TV");
+        productsList.add("Tv");
         productsList.add("Tablet");
         productsList.add("Notebook");
 
         productsList.forEach(System.out::println);
-
+        productsList.sort((products, other) -> products.compareTo(other));
+        productsList.forEach(System.out::println);
 //        productsList.forEach(products -> {
 //            System.out.println(products);
 //        });
