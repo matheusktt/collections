@@ -12,11 +12,15 @@ public class Program {
         productsList.add("Tablet");
         productsList.add("Notebook");
 
-        productsList.forEach(new Consumer<String>() {
-            @Override
-            public void accept(String products) {
-                System.out.println(products);
-            }
+
+        productsList.forEach(products -> {
+            System.out.println(products);
         });
+//        productsList.forEach(new Consumer<String>() {
+//            @Override
+//            public void accept(String products) {
+//                System.out.println(products);
+//            }
+//        });
     }
 }
